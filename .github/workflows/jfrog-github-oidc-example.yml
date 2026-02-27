@@ -1,6 +1,9 @@
 name: "Setup JFrog CLI OIDC Example"
 on: push
 
+env:
+  JF_URL: ${{ vars.JF_URL }}
+
 permissions:
   # This is required for requesting the OIDC token
   id-token: write
