@@ -1,9 +1,6 @@
 name: "Setup JFrog CLI OIDC Example"
 on: push
 
-env:
-  JF_URL: ${{ vars.JF_URL }}
-
 permissions:
   # This is required for requesting the OIDC token
   id-token: write
@@ -12,6 +9,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: JFrog
     steps:
       - name: Checkout
         uses: actions/checkout@v4
