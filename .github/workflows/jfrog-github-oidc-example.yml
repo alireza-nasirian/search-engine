@@ -2,7 +2,7 @@ name: "Setup JFrog CLI OIDC Example"
 on: push
 
 permissions:
-  # This is required for requesting the OIDC token  
+  # This is required for requesting the OIDC token
   id-token: write
   # This is required for actions/checkout
   contents: read
